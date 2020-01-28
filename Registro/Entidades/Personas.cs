@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace Registro.Entidades
 {
     public class Personas
     {
+        [Key]
         public int PersonaId { set; get; }
         public string Nombre { get; set; }
         public string Telefono { get; set; }

@@ -45,17 +45,9 @@ namespace Registro.UI.Registro
             string Entrada;
             int Valor;
 
-            try
-            {
-                Entrada = TextBoxId.Text;
-                Valor = Convert.ToInt32(Entrada);
-                Valor = Persona.PersonaId;
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Solo se permiten Numeros");
-                TextBoxId.Text = string.Empty;
-            }
+            Entrada = TextBoxId.Text;
+            Convert.ToInt32(Entrada);
+            Valor = Persona.PersonaId;
 
             TextBoxNombre.Text = Persona.Nombre;
             TextBoxTelefono.Text = Persona.Telefono;
